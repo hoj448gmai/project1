@@ -1,0 +1,89 @@
+.second-screen{
+  padding-top: 59px ;
+  &__line{
+    margin-top: 41px;
+  }
+  &__row{
+    display: flex;
+    column-gap: 180px;
+    text-align: center;
+  }
+  &__content{
+    width: 33.3%;
+    &__description{
+      @include text($roboto,normal,normal,18px,32px);
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+
+  }
+  }
+  &__img {
+    width: 100%;
+    margin-top: 20px ;
+  }
+}
+
+@media (max-width: 1200px) {
+  .second-screen__row {
+    column-gap: 110px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .second-screen__row{
+    column-gap: 47px;
+  }
+}
+
+@media (max-width: 992px) {
+  .second-screen__description {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 25px;
+    &__row{
+      column-gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .second-screen__row{
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .second-screen__content2{
+    width: calc(50% - 15px);
+    text-align: center;
+  }
+  .second-screen__content:nth-child(2){
+    order: 3;
+  }
+  .second-screen {
+    padding: 40px 0 20px;
+  }
+}
+
+@media (max-width: 426px) {
+  .second-screen{
+    padding-top: 30px;
+  }
+  .second-screen__description{
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+  .second-screen__content2{
+    width: calc(50% - 11px);
+  }
+  .second-screen__row{
+    column-gap: 22px;
+    row-gap: 22px;
+  }
+}

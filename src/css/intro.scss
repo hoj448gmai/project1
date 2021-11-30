@@ -1,0 +1,23 @@
+.intro{
+  padding-top: 59.09px ;
+  &__line{
+    margin-top: 94.91px;
+  }
+  &__img{
+    width: 100%;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    @include text ($liberation,normal,normal,53px,80px);
+    color: #000000;
+    margin-top: 54px;
+  }
+  &__description{
+    @include text($roboto,normal,normal,18px,32px);
+    color: #000000;
+    margin-top: 59px;
+  }
+}

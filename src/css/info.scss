@@ -1,0 +1,42 @@
+.info {
+  padding: 59.09px 0 50px;
+  &__col {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+
+  &__title1 {
+    @include text($liberation,normal,normal,30px,44px);
+    color: #000000;
+    margin-bottom: 19px;
+    margin-top: 90px;
+  }
+
+  &__description1 {
+    @include text ($roboto,normal,normal,18px,32px);
+    color: #000000;
+    margin-bottom: 21px;
+  }
+
+  &__title2 {
+    @include text($liberation,normal,normal,36px,44px);
+    color: #000000;
+    margin-bottom: 17px;
+  }
+  &__description2{
+    @include text($roboto,normal,normal,18px,32px);
+    color: #000000;
+    margin-bottom:20px ;
+  }
+  &__title3{
+    @include text($liberation,normal,normal,30px,44px);
+    color: #000000;
+    margin-bottom: 19px;
+  }
+  &__description3{
+    @include text($roboto,normal,normal,18px,32px);
+    color: #000000;
+  }
+}
